@@ -1,0 +1,29 @@
+.Badges__list {
+  margin: 0 10%;
+}
+
+.Badges__list-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+  box-shadow: 1px 2px 5px 0px #949494;
+}
+
+.Badges__list-item-avatar {
+  padding: 15px 10px;
+}
+
+.Badges__list-item-name {
+  font-weight: bold;
+  margin: 15px 0px 0px 5px;
+}
+
+.Badges__list-item-twitter {
+  color: rgb(61, 97, 255);
+  margin: 0 5px;
+}
+
+.Badges__list-item-jobTitle {
+  margin: 0 5px;
+}
