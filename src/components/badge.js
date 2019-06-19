@@ -1,5 +1,6 @@
 import React from "react";
 import confLogo from "../images/badge-header.svg";
+import Gravatar from "../components/gravatar";
 import "./styles/badge.css";
 
 class Badge extends React.Component {
@@ -11,11 +12,7 @@ class Badge extends React.Component {
         </div>
 
         <div className="Badge__section-name">
-          <img
-            src={this.props.avatarUrl}
-            alt="Avatar"
-            className="Badge__avatar"
-          />
+          <Gravatar email={this.props.email} className="Badge__avatar" />
           <h1>
             {this.props.firstName} <br /> {this.props.lastName}
           </h1>

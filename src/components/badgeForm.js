@@ -2,14 +2,13 @@ import React from "react";
 
 class BadgeForm extends React.Component {
   handleClick = e => {
-    console.log("asdsad");
+    console.log("Button was clicked");
   };
 
   render() {
     return (
       <div>
-        <h1>New Attendant</h1>
-        <form action="">
+        <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label htmlFor="">First Name</label>
             <input
@@ -65,13 +64,13 @@ class BadgeForm extends React.Component {
             />
           </div>
 
-          <button
-            type="button"
-            onClick={this.handleClick}
-            className="btn btn-primary"
-          >
+          <button onClick={this.handleClick} className="btn btn-primary">
             Save
           </button>
+
+          {this.props.error && (
+            <p className="text-danger">{this.props.error.message}</p>
+          )}
         </form>
       </div>
     );
